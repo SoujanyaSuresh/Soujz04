@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #333;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+/* Home Section Styling */
+.home {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px; /* Increased top padding for better spacing */
+    position: relative;
+    min-height: 100vh; /* Ensure the section takes the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    text-align: center;
+}
+
+.home-container {
+    margin-bottom: 30px;
+}
+
+.home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 600; /* Increase weight for the title */
+}
+
+.home p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.home button {
+    padding: 12px 20px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Added margin to separate button from text */
+}
+
+.home button:hover {
+    background-color: #555;
+}
+
+.profile-photo-container {
+    text-align: center;
+    margin-top: 30px; /* Adding margin to create space between text and profile photo */
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    margin-bottom: 20px; /* Added margin below the profile image */
+}
+
+/* Resume Section Styling */
+.resume-box, .bio-box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-box h2, .bio-box h2 {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.resume-box ul, .bio-box ul {
+    list-style-type: none;
+}
+
+.resume-box li, .bio-box li {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+/* Education Table Layout */
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.education-table th, .education-table td {
+    padding: 12px;
+    text-align: left;
+    border: 2px solid #3498db; /* Add border with color */
+}
+
+.education-table th {
+    background-color: #3498db;
+    color: white;
+    border: 2px solid #1f78b4; /* Darker blue border for header */
+}
+
+.education-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.education-table th, .education-table td {
+    width: 33%; /* Ensure each column takes up equal space */
+}
+
+/* Skills Table Layout */
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.skills-table th, .skills-table td {
+    padding: 12px;
+    text-align: left;
+    border: 2px solid #f39c12; /* Add a golden border color */
+}
+
+.skills-table th {
+    background-color: #f39c12;
+    color: white;
+    border: 2px solid #e67e22; /* Darker orange border for header */
+}
+
+.skills-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home {
+        padding: 50px 20px;
+    }
+
+    .resume-box, .bio-box {
+        margin: 15px;
+    }
+
+    .education-table, .skills-table {
+        font-size: 0.9em; /* Reduce font size on smaller screens */
+    }
+
+    .education-table th, .skills-table th {
+        padding: 8px;
+    }
+
+    .education-table td, .skills-table td {
+        padding: 8px;
+    }
+
+    .home-container {
+        padding: 20px;
+    }
+
+    .home h1 {
+        font-size: 2.5em;
+    }
+
+    .home p {
+        font-size: 1.1em;
+    }
+
+    .home button {
+        font-size: 1em;
+    }
+}
